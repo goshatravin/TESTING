@@ -22,5 +22,8 @@
   "homepage": "https://github.com/goshatravin/frontend-project-lvl1#readme",
   "keywords": [
     "js"
-  ]
+  ],
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
