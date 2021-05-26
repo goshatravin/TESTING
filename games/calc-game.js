@@ -1,20 +1,19 @@
 import random from '../src/randomNumber.js';
 
 const description = 'What is the result of the expression?';
-const Arr = ['+', '-', '*'];
-const localRandom = Math.floor(Math.random() * 3);
 
 const gameDetails = () => {
   const first = random();
   const second = random();
+  const localRandom = Math.floor(Math.random() * 3);
   let question = '';
-  let correctAnswer = NaN;
-  switch (Arr[localRandom]) {
-    case Arr[localRandom] === '-':
+  let correctAnswer = '';
+  switch (true) {
+    case (localRandom === 0):
       question = `${first} - ${second}`;
       correctAnswer = first - second;
       break;
-    case Arr[localRandom] === '*':
+    case (localRandom === 1):
       question = `${first} * ${second}`;
       correctAnswer = first * second;
       break;
