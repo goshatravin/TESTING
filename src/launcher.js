@@ -4,7 +4,7 @@ const Launcher = (game) => {
   const count = 3;
   const [gameDetails, description] = game();
   console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('What is your name: ');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(description);
   for (let i = 0; i < count; i += 1) {
     const [question, correctAnswer] = gameDetails();
