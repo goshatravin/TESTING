@@ -1,7 +1,8 @@
 ### Hexlet tests and linter status:
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/11817aa20aa0f363714b/maintainability)](https://codeclimate.com/github/goshatravin/TESTING/maintainability)
 [![Actions Status](https://github.com/goshatravin/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/goshatravin/frontend-project-lvl1/actions)
-
+[![Test Coverage](https://api.codeclimate.com/v1/badges/11817aa20aa0f363714b/test_coverage)](https://codeclimate.com/github/goshatravin/TESTING/test_coverage)
 ## Version 0.5.0
 
 [![asciicast](https://asciinema.org/a/Jcl6ypVzcA2mcU69ObrYl3lsT.svg)](https://asciinema.org/a/Jcl6ypVzcA2mcU69ObrYl3lsT)
