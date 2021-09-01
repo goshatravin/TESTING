@@ -3,7 +3,6 @@ import random from './randomNumber.js';
 const progression = () => {
   const number = random();
   const diff = Math.round(Math.random() * 10 + 1);
-  console.log(diff, 'diff')
   const arr = [];
   let answer = '';
   for (let i = 1; i <= 10; i += 1) {
