@@ -18,6 +18,6 @@ const Launcher = (game) => {
       return;
     }
   }
-  console.log(`Congratulations,${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 export default Launcher;
