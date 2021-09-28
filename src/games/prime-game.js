@@ -1,4 +1,4 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomNum from '../getRandomNum.js';
 
 const prime = (a) => {
   const sqrt = Math.floor(Math.sqrt(a));
@@ -11,7 +11,7 @@ const prime = (a) => {
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getGameData = () => {
-  const number = getRandomInt(1, 100);
+  const number = getRandomNum(1, 100);
   const correctAnswer = prime(number) ? 'yes' : 'no';
   return [number, correctAnswer];
 };

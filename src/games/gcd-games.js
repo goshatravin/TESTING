@@ -1,4 +1,4 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomNum from '../getRandomNum.js';
 
 const gcd = (a, b) => {
   if (!b) {
@@ -11,8 +11,8 @@ const gcd = (a, b) => {
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getGameData = () => {
-  const number1 = getRandomInt(1, 10);
-  const number2 = getRandomInt(1, 10);
+  const number1 = getRandomNum(1, 10);
+  const number2 = getRandomNum(1, 10);
   const question = `${number1} ${number2}`;
   const correctAnswer = gcd(number1, number2);
   return [question, correctAnswer];

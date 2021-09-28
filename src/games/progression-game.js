@@ -1,4 +1,4 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomNum from '../getRandomNum.js';
 
 const progression = (startingElem, step, length) => {
   const arr = [];
@@ -13,7 +13,7 @@ const progression = (startingElem, step, length) => {
 const description = 'What number is missing in the progression?';
 
 const getGameData = () => {
-  const [question, correctAnswer] = progression(getRandomInt(1, 20), getRandomInt(1, 10), 10);
+  const [question, correctAnswer] = progression(getRandomNum(1, 20), getRandomNum(1, 10), 10);
   return [question, correctAnswer];
 };
 export default () => [getGameData, description];

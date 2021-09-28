@@ -1,12 +1,12 @@
-import getRandomInt from '../randomNumber.js';
+import getRandomNum from '../getRandomNum.js';
 
 const description = 'What is the result of the expression?';
 
 const getGameData = () => {
-  const first = getRandomInt(5, 10);
-  const second = getRandomInt(1, 5);
+  const first = getRandomNum(5, 10);
+  const second = getRandomNum(1, 5);
   const operators = ['+', '-', '*'];
-  const randomOperator = getRandomInt(1, 3);
+  const randomOperator = getRandomNum(1, 3);
   let question = '';
   let correctAnswer = '';
   switch (operators[randomOperator]) {
