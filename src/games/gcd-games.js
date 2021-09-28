@@ -5,7 +5,7 @@ const getGcd = (a, b) => {
     return a.toString();
   }
 
-  return gcd(b, a % b);
+  return getGcd(b, a % b);
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
