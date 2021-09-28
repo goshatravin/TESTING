@@ -1,6 +1,6 @@
 import getRandomNum from '../getRandomNum.js';
 
-const progression = (startingElem, step, length) => {
+const generateProgression = (startingElem, step, length) => {
   const arr = [];
   for (let i = startingElem; arr.length <= 9; i += step) {
     arr.push(i + step);
@@ -13,7 +13,7 @@ const progression = (startingElem, step, length) => {
 const description = 'What number is missing in the progression?';
 
 const getGameData = () => {
-  const [question, correctAnswer] = progression(getRandomNum(1, 20), getRandomNum(1, 10), 10);
+  const [question, correctAnswer] = generateProgression(getRandomNum(1, 20), getRandomNum(1, 10), 10);
   return [question, correctAnswer];
 };
 export default () => [getGameData, description];
