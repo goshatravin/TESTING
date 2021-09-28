@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import even from '../games/even-game.js';
-import Launcher from '../src/launcher.js';
+import even from '../src/games/even-games.js';
+import gameRunner from '../src/gameRunner.js';
 
-Launcher(even);
+gameRunner(even);

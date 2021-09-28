@@ -1,2 +1,2 @@
-const random = () => Math.floor(Math.random() * 20);
-export default random;
+const getRandomInt = (a,b) => Math.floor(Math.random() * (b - a) + a);
+export default getRandomInt;

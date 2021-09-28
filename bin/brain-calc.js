@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import calc from '../games/calc-game.js';
-import Launcher from '../src/launcher.js';
+import calc from '../src/games/calc-games.js';
+import gameRunner from '../src/gameRunner.js';
 
-Launcher(calc);
+
+gameRunner(calc);

@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const Launcher = (game) => {
+const gameRunner = (game) => {
   const count = 3;
   const [gameDetails, description] = game();
   console.log('Welcome to the Brain Games!');
@@ -20,4 +20,4 @@ const Launcher = (game) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default Launcher;
+export default gameRunner;
