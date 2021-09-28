@@ -6,7 +6,7 @@ const progression = (startingElem, step, length) => {
     arr.push(i + step);
   }
   const answer = arr[length - step];
-  arr[length - step] = '...';
+  arr[length - step] = '..';
   return [arr.join(' '), answer.toString()];
 };
 
