@@ -1,15 +1,16 @@
-import getRandomNum from '../getRandomNum.js';
+import getRandomNumber from '../getRandomNumber.js';
 
 const description = 'What is the result of the expression?';
 
 const getGameData = () => {
-  const first = getRandomNum(5, 10);
-  const second = getRandomNum(1, 5);
+  const first = getRandomNumber(1, 10);
+  const second = getRandomNumber(1, 10);
+  console.log(first, second)
   const operators = ['+', '-', '*'];
-  const randomOperator = getRandomNum(1, 3);
+  const randomOperator = getRandomNumber(1, operators.length);
   let question = '';
   let correctAnswer = '';
-  switch (operators[randomOperator]) {
+  switch (operators[randomOperator - 1]) {
     case ('-'):
       question = `${first} - ${second}`;
       correctAnswer = first - second;
