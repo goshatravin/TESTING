@@ -2,7 +2,7 @@ import getRandomNumber from '../getRandomNumber.js';
 
 const getProgression = (startingElem, step, length) => {
   const arr = [];
-  for (let i = startingElem; arr.length <= 9; i += step) {
+  for (let i = startingElem; arr.length < length; i += step) {
     arr.push(i + step);
   }
   return arr;

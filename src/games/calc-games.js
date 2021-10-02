@@ -5,7 +5,7 @@ const description = 'What is the result of the expression?';
 const getGameData = () => {
   const first = getRandomNumber(1, 10);
   const second = getRandomNumber(1, 10);
-  console.log(first, second)
+  console.log(first, second);
   const operators = ['+', '-', '*'];
   const randomOperator = getRandomNumber(1, operators.length);
   let question = '';
